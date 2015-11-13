@@ -19,8 +19,7 @@ class FizzBuzzTwo
   end
 
   def display_series
-    (1..limit).each { |x| @result += "#{define_output(x)} " }
-    puts result
+    (1..limit).each { |x| @result << "#{define_output(x)} " }
     result
   end
 
@@ -31,4 +30,4 @@ class FizzBuzzTwo
   end
 end
 
-FizzBuzzTwo.new(100).display_series
+FizzBuzzTwo.new(1000).display_series
